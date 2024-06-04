@@ -2,10 +2,10 @@
 
 This is a simple TCP server written in Go that listens on a specified address and port, accepts incoming connections, and provides a basic command handling mechanism.
 
-## Setup
+## Server setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/simple-tcp-server-go.git
+   git clone https://github.com/comr8/time-server.git
    ```
 2. Build the server binary:
    ```bash
@@ -14,6 +14,19 @@ This is a simple TCP server written in Go that listens on a specified address an
 3. Run the server:
    ```bash
    ./server
+   ```
+## Client setup
+1. Clone the repository if it was not cloned in the previous step.
+   ```bash
+   git clone https://github.com/comr8/time-server.git
+   ```
+2. Build the client binary:
+   ```bash
+   go build client.go
+   ```
+3. Run the server:
+   ```bash
+   ./client
    ```
 ## Usage
 The server listens for incoming connections and handles two commands:
